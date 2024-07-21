@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+<style>
+#Contact_Section{
+background:linear-gradient( to right, rgba(255, 255, 0, 0.329), rgba(128, 0, 128, 0.63)) ;
+width:100% ;
+height:100vh;
+}
+#contact_us{
+margin-top: 100px;
+text-align: center;
+text-shadow:#000000f4 ;
+color: #fff;
+}
+#contact_section{
+margin-top:100px ;
+margin-left:200px ;
+width:300px ;
+height: 300px;
+}
+#address{
+background:#00000000 ;
+}
+#CONTACT_US{
+display: flex;
+gap:150px;
+}
+#Feedback{
+margin-top:100px ;
+height:400px ;
+width:250px ;
+border:5px solid rgba(128, 0, 128, 0.473) ;
+justify-content: center;
+padding: 20px 20px 20px 20px;
+border-radius:10px ; 
+}
+#order{
+background-color:yellow;
+border-radius:5px ;
+border:2px solid #fff;
+}
+
+@media(max-width:1400px){
+#CONTACT_US{
+gap:50px;
+}}
+@media(max-width:1400px){
+#CONTACT_US{
+gap:50px;
+}
+#contact_section{
+  margin-left:10px
+}
+#Contact_Section{
+height:750px;
+}
+}
+@media(max-width:600px){
+  #Contact_Section{
+  height:1000px;
+  }
+  #contact_section{
+  margin-left:10px ;
+  width:250px;
+  margin-top: 50px;
+  }
+  #CONTACT_US{
+    display:block;
+    gap:20px;
+  }
+  #Feedback{
+    margin-top: 10px;
+  height:400px;
+  width:200px;
+  }
+ 
+}
+</style>
+</head>
+<body>
+    <div id="Contact_Section">
+        <p>.</p>
+        <h1 id="contact_us">CONTACT</h1>
+        <div id="CONTACT_US">
+        <div id="contact_section">
+        <div id="contact_list">
+        <div id="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="text">
+        <h3 id="address">Address</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, pariatur!</p>
+        </div>
+        </div>
+        <div id="contact_list">
+            <div id="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+            <div id="text">
+            <h3 id="address">Phone</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, pariatur!</p>
+            </div>
+            </div>
+            <div id="contact_list">
+                <div id="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div id="text">
+                <h3 id="address">Email id</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, pariatur!</p>
+                </div>
+                </div>  
+        </div>
+        <div id="Feedback">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact_form">
+          <input type="hidden"  name="access_key"  value= "e1c24a02-0184-4659-86ce-6c6510c60ecd" >
+        <span>First Name:</span>
+        <input id="name" type="text" name="name" placeholder="Ravina" style="height:40px;width:200px" ><br>
+        
+            <span>Second Name:</span>
+            <input id="name" type="text" name="name" placeholder="Chuahan" style="height:40px;width:200px" ><br>
+            
+            <span>Email id:</span>
+            <input  id="email" type="email" name="email" placeholder="email@gmail.com" style="height:40px;width:200px"> <br>
+        <span>Food names:</span>
+        <input id="ordername" type="text"  name="message" placeholder="burger" style="height:40px;width:200px"><br>
+        <span>Your Address:</span>
+        <textarea name="message" style="height:80px;width:200px"></textarea>
+        <button id="order" type="submit"  style="height:40px;width:80px">Order now</button>
+        </form>
+        </div>
+        </div></div>
+        
+        
+           
+</body>
+</html>
