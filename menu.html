@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>*{
+        margin:0;
+        padding:0;
+    }
+    html{
+    font-size:100% ;
+    scroll-behavior:smooth ;}
+    #Menu{
+        background-image:url(menuimage2.jpg) ;
+        background-size:cover ;
+        background-repeat:no-repeat ;
+        background-position:center center;
+        background-attachment:fixed ;
+        justify-content:center ;
+        }
+        #menu{
+          text-align:center ;
+          margin-bottom: 50px;
+          font-size: 4rem;
+          color:#fff ;
+        }
+        #popular_items{
+        font-size:1.5rem;
+        color:#000 ;
+        }
+        #description{
+        font-size:1rem ;
+        color:#000;
+        }
+        #meal{
+        text-align:center ;
+        color: #fff;
+        text-shadow:3px 3px 3px #000000c9 ;
+        }
+        #food_image{
+        box-shadow:5px 5px 5px #00000076 ;
+        }
+        #table{
+        margin-left: auto;
+        margin-right:auto  ;
+        width: 80%;
+        border-collapse:collapse;
+        box-shadow:5px 5px 5px #00000007 ;
+        }
+        #table thead tr th{
+        font-size:1.8rem ;
+        color:#000;
+        padding:1px;
+        background-color:#fff ;
+        vertical-align: top;
+        border:2px solid #000;
+        border-radius:10px ;
+        }
+        #table tbody tr td{
+        font-size:1.5rem;
+        color:#000;
+        border:2px solid #000;
+        background-color: #fff;
+        }#section1,#section2,#section3,#section4{
+  display:flex;
+  width:60%;
+  margin-bottom:20px ;
+  justify-content:center ;
+  gap:10px;
+}
+#food_image{
+  width:33%;
+  height:350px ;
+  border:5px solid  #fff;
+  justify-content: center;
+border-radius:5px ;
+background:#fff;}
+
+#food_image h2,h3{
+color: #000;
+background-color: #fff;
+}
+#menu_image{
+width:100%;
+}
+#section1,#section2{
+margin-left:10px ;
+}
+#section2,#section4{
+margin-left:400px;
+
+}
+
+@media (max-width:1130px){
+  #food_image{
+  width:100%;
+  height:370px;
+  margin-bottom:15px;
+  }#menu_image{
+    width:100% ;
+    height:105px ;
+  }
+  #table thead tr th,#table tbody tr td{
+    font-size:1rem ;
+  }
+  
+}
+
+@media (max-width:750px){
+#section1,#section2,#section3,#section4{
+display:block ;
+}
+#food_image{
+width:100%;
+height:250px ;
+margin-bottom:15px ;
+}
+#menu_image{
+width:100% ;
+height:105px ;
+}
+#section2,#section4{
+margin-left:10px ;
+}
+
+#table thead th{
+display:none;
+}
+#table,#table tbody,#table tr,#table td{
+display:block;
+width:90% ;}
+
+#table tr{
+margin-bottom:15px ;
+}
+#table tbody tr td{
+text-align:right;
+padding-left:10% ;
+position: relative;
+}
+#table td:before{
+content:attr(data-label);
+position:absolute;
+left:0;
+width:50% ;
+text-align:left ;
+color:rgba(102, 51, 153, 0.989)
+}
+#price_01{
+font-size:1rem ;
+}
+}
+        </style>
+</head>
+<body>
+    <div id="Menu">
+        <h1 id="menu">Menu</h1>
+        <h2 id="popular_items">Popular items</h2>
+        <h2 id="description">The most common food or dishes ordered by customer in this restaurant .</h2>
+            <div id="section1">
+            <h2 id="meal">Indian Snacks</h2>
+         <div id="food_image">
+            <img id="menu_image"src="Samosa-Chaati.jpg" height="200px" width="200px">
+            <h2 id="food_01">Samosa-Chaat</h2>
+            <h3 id="price_01">mixture of chole and crispy samosa with yogurt and flavoured sauces.</h3>
+             <h3 id="price_01">$25</h3>   
+        </div>
+        <div id="food_image">
+            <img id="menu_image" src="golgappa.jpg" height="200px" width="200px">
+            <h2 id="food_01">Golgappa</h2>
+            <h3 id="price_01">Crispy fried puffed ball that is filled with smashed potato and flavoured water.</h3><h3 id="price_01">$30</h3>   
+        </div>
+        <div id="food_image">
+         <img id="menu_image" src="Bhel-Puri.jpg" height="200px">
+         <h3 id="price_01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime </h3>
+        </div>
+        </div>
+        <div id="section2">
+        <div id="food_image">
+            <img id="menu_image" src="burger.jpg" height="200px" width="200px" >
+            <h2 id="food_01">Burger</h2>
+            <h3 id="price_01">A patty of potato ,slices of raw onion ,lettuce, mayonnaisse and cheeze between two halves bun.</h3>
+            <h3 id="price_01">$35</h3></div>
+        <div id="food_image"><img id="menu_image" src="Schezwan-Noodles.jpg" height="200px" width="200px">
+            <h2 id="food_01">Schezwan-Noodles</h2>
+            <h3 id="price_01">popular Indo-Chinese condiment made with red chilies,garlic,soya sauce and Sichuan peppers.</h3>
+            <h3 id="price_01">$30</h3></div>
+        <div id="food_image">
+            <img id="menu_image" src="french-fries.jpg" height="200px" width="200px">
+            <h2 id="food_01">French-Fries</h2>
+            <h3 id="price_01">fried potato with crunchy exterior and a light,fluffy interior.</h3>
+            <h3 id="price_01">$20</h3></div>
+        <h2 id="meal">Appetizers</h2></div>
+        <div id="section3"><h2 id="meal">Sweets</h2>
+        <div id="food_image">
+            <img id="menu_image" src="jelebi.jpeg" height="200px" width="200px">
+            <h2 id="food_01">Tasty Food 01</h2>
+            <h3 id="price_01">Made by deep-frying maida flour which are then soaked in sugar syrup.</h3>
+            <h3 id="price_01">$20</h3>
+            </div>
+        <div id="food_image">
+            <img id="menu_image" src="rasmalai-recipe.jpg" height="200px" width="200px">
+            <h2 id="food_01">Rasmalai</h2>
+            <h3 id="price_01">Flattened balls of chenna soaked in malai ,flavoured with milk</h3>
+            <h3 id="price_01">$25</h3>
+        </div>
+        <div id="food_image">
+            <img id="menu_image" src="gulab-jamun.jpeg" height="200px" width="200px">
+            <h2 id="food_01">Gulab-Jamun</h2>
+            <h3 id="price_01">Fried dough balls that are soacked in a sweet, sticky sugar syrup</h3>
+            <h3 id="price_01">$20</h3></div>
+        </div>
+        <div id="section4">
+        <div id="food_image">
+            <img id="menu_image" src="Tea-.jpg" height="200px" width="200px">
+            <h2 id="food_01">Tea</h2>
+            <h3 id="price_01">beverage prepared by pouring hot milk over cured or fresh leaves of Camellia sinensis.</h3> 
+            <h3 id="price_01">$20</h3>  
+        </div> 
+        <div id="food_image">
+            <img id="menu_image" src="coffee.jpg" height="200px" width="200px">
+            <h2 id="food_01">Coffee</h2>
+            <h3 id="price_01"> Made by percolation, infusion, or decoction from the roasted and ground seeds of a coffee plant.</h3><h3 id="price_01">$15</h3></div>
+        <div id="food_image">
+            <img id="menu_image" src="Greentea.jpg" height="200px" width="200px">
+            <h2 id="food_01">Greentea</h2>
+            <h3 id="price_01">pure and natural Camelia sinensis leaves with hot water.</h3>
+            <h3 id="price_01">$10</h3></div><h2 id="meal">Beverages</h2>
+        </div>
+        <table id="table">
+        <thead>
+        <tr>
+        <th>Breakfast</th>
+        <th>Lunch and Dinner</th>
+        <th>Sweets</th>
+        </tr>
+        <tbody> 
+        <tr>
+        <td>Breakfast</td>
+        <td>Lunch and Dinner</td>
+        <td>Sweets</td></tr>
+        <tr>
+        <td data-label="*Breakfast"> Paneer-Paratha..........$20</td>
+        <td data-label="*Lunch">Masala-Dal,rice with salid......$35</td>
+        <td data-label="*Sweets">Ras-Malai.........$10</td>
+        </tr>
+        <td data-label="*Breakfast">Onion-Paratha........$10</td>
+        <td  data-label="*Lunch">Veg-Biryani..........$10</td>
+        <td data-label="*Sweets">Gulab-Jamun..........$10</td>
+        </tr>
+        <td data-label="*Breakfast">Mix-Paratha..........$10</td>
+        <td data-label="*Lunch">Pulao.........$10</td>
+        <td data-label="*Sweets">Rasogula..........$10</td>
+        </tr>
+    </tr>
+    <td data-label="*Breakfast">Poha........$10</td>
+    <td data-label="*Lunch">Shahi-Paneer,Rice and salid.........$10</td>
+    <td data-label="*Sweets">Kheer...........$10</td>
+    </tr>
+    </tr>
+    <td data-label="*Breakfast">Sandwitch............$10</td>
+    <td data-label="*Lunch">Matter-Panner,rice and salid.........$10</td>
+    <td data-label="*Sweets" >Sohan-Halwa..........$10</td>
+    </tr>
+    </tr>
+    <td data-label="*Breakfast">Dhokla..........$10</td>
+    <td data-label="*Lunch">Channa-Bhatura..........$10</td>
+    <td data-label="*Sweets">Gajar-Halwa............$10</td>
+    </tr>
+    </tr>
+    <td data-label="*Breakfast">Upma.........$10</td>
+    <td data-label="*Lunch">Palak-Paneer,Naan........$10</td>
+    <td data-label="*Sweets">Rabri........$10</td>
+    </tr>
+    </tr>
+    <td data-label="*Breakfast">Idli-Sambar..........$10</td>
+    <td data-label="*Lunch">Malai-Kofta............$10</td>
+    <td data-label="*Sweets">Malai-Khaja..........$10</td>
+    </tr>
+    </tr>
+    <td data-label="*Breakfast" >Appam........$10</td>
+    <td data-label="*Lunch">Dal-Bati Churma..........$10</td>
+    <td data-label="*Sweets">Kaju-Katli..........$10</td>
+    </tr>
+    </tbody>
+        </thead>
+        </table>
+    
+        </div>
+</body>
+</html>
